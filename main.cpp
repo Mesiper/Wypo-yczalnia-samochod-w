@@ -58,7 +58,7 @@ public:
         cout<< "Typ paliwa: "<< typ_paliwa <<'\n';
     }
 
-
+	//zastanowmy sie nad inna metoda na zapisywanie raportu niz w stringu
     string dodawanie()
     {
         fstream plik;
