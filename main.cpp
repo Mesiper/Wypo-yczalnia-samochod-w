@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
-
+#include "samochod.h"
 using namespace std;
 
 
@@ -21,7 +21,7 @@ int main()
 
    s[1].raport();
     // s1.dodawanie_auta();
-    // s1.wyswietlanie();
+   s[1].wyswietlanie();
 
 cout<<'\n';
     return 0;

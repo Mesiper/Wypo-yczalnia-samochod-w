@@ -4,7 +4,7 @@
 
 using namespace std;
 
-
+ 
 class Car
 {
 public:
@@ -22,8 +22,16 @@ public:
     */
     int ktory_samochod;
 
-    void wczytywanie()
-    {
+    void wczytywanie();
+    void wyswietl();
+    void dodawanie();
+    void dodawanie_auta();
+    void wyswietlanie();
+    void raport();
+
+
+    //void wczytywanie();
+    /*{
         fstream plik;
 
         plik.open("samochody.txt", ios::in);
@@ -48,8 +56,10 @@ public:
             cout<<" Problem z plikiem! ";
         }
     }
+    */
 
-    void wyswietl()
+    //void wyswietl();
+    /*
     {
         cout<< "-----------------------------------" <<'\n';
         cout<< marka << '\n';
@@ -59,7 +69,9 @@ public:
     }
 
 	//zastanowmy sie nad inna metoda na zapisywanie raportu niz w stringu
-    void dodawanie()
+    */
+    //void dodawanie();
+    /*
     {
         fstream plik;
 
@@ -81,8 +93,9 @@ public:
 
         plik.close();
     }
+    */
+    //void dodawanie_auta();
     /*
-    void dodawanie_auta()
     {
         cout<<"DODAWNIE AUTA \n";
         cout<<"Podaj marke: ";
@@ -106,8 +119,9 @@ public:
         cout<<"Podaj dostepnosc: ";
         cin>>dostepnosc;
     }
-
-    void wyswietlanie()
+    */
+    //void wyswietlanie();
+    /*
     {
         cout<< '\n' << "Samochod: "<< '\n' <<'\n';
         cout<< "Marka: " << marka <<'\n'<< "Model: " << model <<'\n';
@@ -121,10 +135,11 @@ public:
         cout<< "Czy dostepny? " << dostepnosc <<'\n';
          
     }
-    
     */
+    
 
-   void raport()
+   //void raport();
+   /*
     {
         time_t czas;
         fstream raporcik;
@@ -134,12 +149,13 @@ public:
         raporcik<<ctime(&czas)<<'\n';
 
         /*raporcik<<"JD"<<'\t'; git ale dodaje jd na poczatku, a date potem.
-        raporcik<<ctime(&czas)<<'\n'; */
+        raporcik<<ctime(&czas)<<'\n';
 
 
 
         raporcik.close();
     }
+    */
 };
 
 

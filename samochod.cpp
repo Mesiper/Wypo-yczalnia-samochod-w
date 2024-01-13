@@ -1,28 +1,12 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
+#include "samochod.h"
 
 using namespace std;
 
 
-class Car
-{
-public:
-    string marka;
-    string model;
-    string tablica;
-    string typ_paliwa;
-    /*
-    string kolor;
-    string rodzaj_skrzyni;
-    int moc;
-    int rocznik;
-    int ilosc_miejsc;
-    bool dostepnosc; 
-    */
-    int ktory_samochod;
-
-    void wczytywanie()
+    void Car::wczytywanie()
     {
         fstream plik;
 
@@ -49,7 +33,7 @@ public:
         }
     }
 
-    void wyswietl()
+    void Car::wyswietl()
     {
         cout<< "-----------------------------------" <<'\n';
         cout<< marka << '\n';
@@ -59,7 +43,7 @@ public:
     }
 
 	//zastanowmy sie nad inna metoda na zapisywanie raportu niz w stringu
-    void dodawanie()
+    void Car::dodawanie()
     {
         fstream plik;
 
@@ -124,7 +108,7 @@ public:
     
     */
 
-   void raport()
+   void Car::raport()
     {
         time_t czas;
         fstream raporcik;
@@ -140,6 +124,6 @@ public:
 
         raporcik.close();
     }
-};
+
 
 
