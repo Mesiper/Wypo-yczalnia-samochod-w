@@ -14,7 +14,7 @@ public:
     string dokument;
     string nrdokumentu;
     string datawaznoscidokument;
-    string wazneprawojazdy;
+    string wazneprawojazdy; //czy to nie powinien byc bool?
     string id_samochodu;
     bool posiadanysamochod= 0;
 
@@ -49,6 +49,7 @@ public:
         plik << dokument << '\n';
         plik << nrdokumentu << '\n';
         */
+       // brakuje plik datawaznosci, i plik wazne prawo jazdy jak cos.
         plik.close();
 
     }
