@@ -2,23 +2,11 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include "klasaklient.h"
 using namespace std;
 
-class Klienci {
-public:
-    string imie;
-    string nazwisko;
-    string pesel;
-    string dataurodzenia;
-    string obywatelstwo;
-    string dokument;
-    string nrdokumentu;
-    string datawaznoscidokument;
-    string wazneprawojazdy; //czy to nie powinien byc bool?
-    string id_samochodu;
-    bool posiadanysamochod= 0;
 
-    void Dodawanie_klienta() {
+    void Klienci::Dodawanie_klienta() {
         cout << "Podaj imie\n";
         cin >> imie;
         cout << "Podaj nazwisko\n";
@@ -53,17 +41,17 @@ public:
         plik.close();
 
     }
-    void wyswietldane() {
+    void Klienci::wyswietldane() {
         cout << imie<<'\n';
         cout << nazwisko<<'\n';
         cout << pesel<< '\n';
     }
-    void czyposiadasamochod() {
+    void Klienci::czyposiadasamochod() {
         if (posiadanysamochod) {
             cout << "gotowy oddac samochod?" << '\n';
         }
     }
-    void wypozyczenie() {
+    void Klienci::wypozyczenie() {
         if (posiadanysamochod) {
             cout << "gotowy oddac samochod?" << '\n';
         }
@@ -82,7 +70,7 @@ public:
     
     
     }
-    void oddanie() {
+    void Klienci::oddanie() {
         if (posiadanysamochod) {
             cout << "gotowy oddac samochod?" << '\n';
             posiadanysamochod = 0;
@@ -90,8 +78,6 @@ public:
         }
     }
 
-
-};
 
 
 

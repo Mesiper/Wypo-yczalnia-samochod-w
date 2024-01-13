@@ -2,6 +2,7 @@
 #include <fstream>
 #include <ctime>
 #include "samochod.h"
+#include "klasaklient.h"
 using namespace std;
 
 
